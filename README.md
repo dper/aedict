@@ -2,6 +2,12 @@
 
 A clone of Aedict 2.  This is a fork of the original project on [Google Code](https://code.google.com/p/aedict/).  That source code base uses Mercurial, and here it has been converted to Git.  Aedict 2 was and is open source, although the original author dropped it in 2011 to work on the closed-source Aedict 3 (not included here).
 
+# Download
+
+Get an APK from the `releases` directory.  I recommend `Aedict.2.9.4.apk`.
+
+The `Aedict.2.9.4.apk` release is newer, but I don't think it has any extra features.  The author added an obnoxious pop-up request for money to the last release before switching to closed source.  I have no respect for nagware, and I recommend against using it.  The APK is there for posterity's sake.
+
 # Description
 
 A free, open-source English-Japanese dictionary for Android which uses Jim Breen's edict data. Does not require japanese keyboard. Works offline. The dictionary data is downloaded automatically. 
