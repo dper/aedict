@@ -8,6 +8,12 @@ Get an APK from the `releases` directory.  I recommend `Aedict.2.9.4.apk`.
 
 The `Aedict.2.9.4.apk` release is newer, but I don't think it has any extra features.  The author added an obnoxious pop-up request for money to the last release before switching to closed source.  I have no respect for nagware, and I recommend against using it.  The APK is there for posterity's sake.
 
+The dictionary files this program tries to get are on an old server that is still running as of 2015 but will not be replaced when the hardware finally fails.  The relevant data files can be found on another server.
+
+* [edict.gz](ftp://ftp.edrdg.org/pub/Nihongo/edict.gz)
+* [enamdict.gz](ftp://ftp.edrdg.org/pub/Nihongo/enamdict.gz)
+* [compdic.gz](ftp://ftp.edrdg.org/pub/Nihongo/compdic.gz)
+
 # Description
 
 A free, open-source English-Japanese dictionary for Android which uses Jim Breen's edict data. Does not require japanese keyboard. Works offline. The dictionary data is downloaded automatically. 
