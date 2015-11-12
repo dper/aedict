@@ -51,13 +51,3 @@ Get an up-to-date copy of the [source](https://github.com/dper/aedict).  Make su
 ```
 
 From the source directory, the following command will try to build everything.  If you're missing any dependencies, look at the error messages to see what is going wrong.
-
-```
-$ mvn
-```
-
-The first time you run this, maven will download a lot of dependencies.  There are many files and it could take several minutes.  One problem is that a strange old version of the Android jar is sought.  It can be downloaded [here](http://baka.sk/maven2/android/android/1.1-r1/).  Then do something like the following (assuming you downloaded the file to your home directory.
-
-```
-$ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.1_r1 -Dpackaging=jar -Dfile=~/android-1.1-r1.jar
-```
