@@ -49,3 +49,9 @@ Get an up-to-date copy of the [source](https://github.com/dper/aedict).  Make su
 ```
 # apt-get install maven aapt
 ```
+
+From the source directory, the following command will try to build everything.  If you're missing any dependencies, look at the error messages to see what is going wrong.
+
+```
+$ mvn
+```
