@@ -41,3 +41,11 @@ A free, open-source English-Japanese dictionary for Android which uses Jim Breen
 # Compatibility
 
 The code is quite old, but it works with newer versions of Android.  It has been successfully tested on Android 4.4.4 (November, 2014) and Android 5.0.1 (March, 2015), as well as many other older other versions.
+
+# Building from Source
+
+Get an up-to-date copy of the [source](https://github.com/dper/aedict).  Make sure that `maven` and `aapt` are installed.  On Debian, they can be installed as follows.
+
+```
+# apt-get install maven aapt
+```
