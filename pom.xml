@@ -24,25 +24,28 @@
 	<version>2.10-SNAPSHOT</version>
 	<name>Aedict</name>
 	<inceptionYear>2009</inceptionYear>
-	<description>An english-japanese dictionary which uses Jim Breen's edict data. Does not require japanese keyboard.</description>
+	<description>An English-Japanese dictionary which uses Jim Breen's edict data. Does not require Japanese keyboard.</description>
 	<url>http://baka.sk/aedict/</url>
 	<prerequisites>
 		<maven>2.2.0</maven>
 	</prerequisites>
-	
+
+	<!--	
 	<scm>
 		<connection>scm:hg:https://aedict.googlecode.com/hg/</connection>
 		<developerConnection>scm:hg:https://aedict.googlecode.com/hg/</developerConnection>
 		<url>https://aedict.googlecode.com/hg/</url>
 	</scm>
-	
+	-->	
+
 	<licenses>
 		<license>
 			<name>GNU General Public License 3</name>
 			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
 		</license>
 	</licenses>
-	
+
+	<!--	
 	<mailingLists>
 		<mailingList>
 			<name>Users</name>
@@ -52,7 +55,8 @@
 			<archive>http://groups.google.com/group/aedict-users/topics</archive>
 		</mailingList>
 	</mailingLists>
-	
+	-->	
+
 	<!-- Developers -->
 	<developers>
 		<developer>
@@ -67,7 +71,8 @@
 			<timezone>1</timezone>
 		</developer>
 	</developers>
-	
+
+	<!--	
 	<distributionManagement>
         <site>
             <id>realtime</id>
@@ -78,11 +83,14 @@
             <url>scp://rt.sk/home/moto/public_html/maven2</url>
         </repository>
 	</distributionManagement>
+	-->
 
+	<!--
 	<issueManagement>
 		<system>Google Code Tracker</system>
 		<url>http://code.google.com/p/aedict/issues/list</url>
 	</issueManagement>
+	-->
 
 	<pluginRepositories>
 		<pluginRepository>
@@ -231,10 +239,10 @@ org.eclipse.jdt.core.compiler.source=1.5
 					<outputEncoding>UTF-8</outputEncoding>
 				</configuration>
 			</plugin>
+<!--
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
-					<!-- The changes:announcement-generate goal will verify whether the changes.xml file is valid -->
 					<preparationGoals>clean install site -P release</preparationGoals>
 					<goals>clean deploy site-deploy -P release</goals>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
@@ -242,9 +250,11 @@ org.eclipse.jdt.core.compiler.source=1.5
 					<password>${google-code.hg.password}</password>
 				</configuration>
 			</plugin>
+-->
 		</plugins>
 	</build>
 	<profiles>
+<!--
 		<profile>
 			<id>release</id>
 			<build>
@@ -283,6 +293,7 @@ org.eclipse.jdt.core.compiler.source=1.5
 				</plugins>
 			</build>
 		</profile>
+-->
 	</profiles>
 
 	<properties>
@@ -316,12 +327,14 @@ org.eclipse.jdt.core.compiler.source=1.5
                     </tags>
                 </configuration>
             </plugin>
+<!--
             <plugin>
                 <artifactId>maven-changes-plugin</artifactId>
                 <configuration>
                     <issueLinkTemplate>http://code.google.com/p/aedict/issues/detail?id=%ISSUE%</issueLinkTemplate>
                 </configuration>
             </plugin>
+-->
             <plugin>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <configuration>
