@@ -55,3 +55,5 @@ From the source directory, the following command will try to build everything.  
 ```
 $ mvn
 ```
+
+The first time you run this, maven will download a lot of dependencies.  There are many files and it could take several minutes.
