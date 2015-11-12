@@ -27,13 +27,11 @@
 	<packaging>android:apk</packaging>
 	<name>Aedict APK</name>
 	<description>A english-japanese dictionary which uses Jim Breen's edict data. Does not require japanese keyboard. This is the Android APK builder.</description>
-	
 	<properties>
 		<masa.version>1.0.2</masa.version>
 		<android.version>2.2</android.version>
 		<android.api>2.2</android.api>
 	</properties>
-	
 	<dependencies>
 		<dependency>
 			<groupId>com.google.android</groupId>
@@ -57,7 +55,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-   
 	<!-- Build environment -->
 	<build>
 		<!-- set the application version to the "version" file -->
@@ -71,7 +68,7 @@
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<configuration>
-		 			<buildcommands>
+					<buildcommands>
 						<buildcommand>com.android.ide.eclipse.adt.ResourceManagerBuilder</buildcommand>
 						<buildcommand>com.android.ide.eclipse.adt.PreCompilerBuilder</buildcommand>
 						<buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
@@ -98,7 +95,9 @@
 				<version>${masa.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<jvmArguments><jvmArgument>-Xmx512m</jvmArgument></jvmArguments>
+					<jvmArguments>
+						<jvmArgument>-Xmx512m</jvmArgument>
+					</jvmArguments>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -107,9 +106,9 @@
 				<version>${masa.version}</version>
 				<configuration>
 					<toolchains>
-			        		<android>
-			        			<version>${android.api}</version>
-			        		</android>
+						<android>
+							<version>${android.api}</version>
+						</android>
 					</toolchains>
 				</configuration>
 			</plugin>
