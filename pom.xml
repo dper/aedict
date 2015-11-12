@@ -30,32 +30,12 @@
 		<maven>2.2.0</maven>
 	</prerequisites>
 
-	<!--	
-	<scm>
-		<connection>scm:hg:https://aedict.googlecode.com/hg/</connection>
-		<developerConnection>scm:hg:https://aedict.googlecode.com/hg/</developerConnection>
-		<url>https://aedict.googlecode.com/hg/</url>
-	</scm>
-	-->	
-
 	<licenses>
 		<license>
 			<name>GNU General Public License 3</name>
 			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
 		</license>
 	</licenses>
-
-	<!--	
-	<mailingLists>
-		<mailingList>
-			<name>Users</name>
-			<subscribe>http://groups.google.com/group/aedict-users/subscribe</subscribe>
-			<unsubscribe>http://groups.google.com/group/aedict-users/subscribe</unsubscribe>
-			<post>aedict-users@googlegroups.com</post>
-			<archive>http://groups.google.com/group/aedict-users/topics</archive>
-		</mailingList>
-	</mailingLists>
-	-->	
 
 	<!-- Developers -->
 	<developers>
@@ -72,35 +52,6 @@
 		</developer>
 	</developers>
 
-	<!--	
-	<distributionManagement>
-        <site>
-            <id>realtime</id>
-            <url>scp://rt.sk/home/moto/public_html/aedict/</url>
-        </site>
-        <repository>
-            <id>realtime</id>
-            <url>scp://rt.sk/home/moto/public_html/maven2</url>
-        </repository>
-	</distributionManagement>
-	-->
-
-	<!--
-	<issueManagement>
-		<system>Google Code Tracker</system>
-		<url>http://code.google.com/p/aedict/issues/list</url>
-	</issueManagement>
-	-->
-
-	<!--
-	<pluginRepositories>
-		<pluginRepository>
-			<id>baka.pluginRepo</id>
-			<name>Baka.sk repository</name>
-			<url>http://baka.sk/maven2</url>
-		</pluginRepository>
-	</pluginRepositories>
-	-->
 	<repositories>
 		<repository>
 			<id>baka.repo</id>
@@ -241,62 +192,8 @@ org.eclipse.jdt.core.compiler.source=1.5
 					<outputEncoding>UTF-8</outputEncoding>
 				</configuration>
 			</plugin>
-<!--
-			<plugin>
-				<artifactId>maven-release-plugin</artifactId>
-				<configuration>
-					<preparationGoals>clean install site -P release</preparationGoals>
-					<goals>clean deploy site-deploy -P release</goals>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<username>${google-code.hg.username}</username>
-					<password>${google-code.hg.password}</password>
-				</configuration>
-			</plugin>
--->
 		</plugins>
 	</build>
-	<profiles>
-<!--
-		<profile>
-			<id>release</id>
-			<build>
-				<plugins>
-		 			<plugin>
-						<artifactId>maven-changes-plugin</artifactId>
-						<inherited>false</inherited>
-						<configuration>
-							<smtpHost>${smtp.host}</smtpHost>
-							<smtpPort>${smtp.port}</smtpPort>
-							<sslMode>${smtp.ssl}</sslMode>
-							<username>${smtp.username}</username>
-							<password>${smtp.password}</password>
-		 					<toAddresses><toAddress>aedict-users@googlegroups.com</toAddress></toAddresses>
-							<mailSender>
-								<name>Martin Vysny</name>
-								<email>vysny@baka.sk</email>
-							</mailSender>
-							<urlDownload>http://code.google.com/p/aedict/downloads/list</urlDownload>
-							<url>${project.url}</url>
-							<issueLinkTemplate>http://code.google.com/p/aedict/issues/detail?id=%ISSUE%</issueLinkTemplate>
-						</configuration>
-						<executions>
-							<execution>
-								<id>verify.changes.xml</id>
-								<goals><goal>announcement-generate</goal></goals>
-								<phase>install</phase>
-							</execution>
-							<execution>
-								<id>send.mail</id>
-								<goals><goal>announcement-mail</goal></goals>
-								<phase>deploy</phase>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
--->
-	</profiles>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -309,11 +206,11 @@ org.eclipse.jdt.core.compiler.source=1.5
                 <artifactId>jxr-maven-plugin</artifactId>
             </plugin>
 	<plugin>
-	                <groupId>org.apache.maven.plugins</groupId>
-	                <artifactId>maven-project-info-reports-plugin</artifactId>
- 	                <version>2.1</version> <!-- 2.2 will crash with stupid ArrayIndexOutOfBoundsException -->
-		</plugin>
-            <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-project-info-reports-plugin</artifactId>
+ 		<version>2.1</version>
+	</plugin>
+	<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>surefire-report-maven-plugin</artifactId>
             </plugin>
@@ -329,14 +226,6 @@ org.eclipse.jdt.core.compiler.source=1.5
                     </tags>
                 </configuration>
             </plugin>
-<!--
-            <plugin>
-                <artifactId>maven-changes-plugin</artifactId>
-                <configuration>
-                    <issueLinkTemplate>http://code.google.com/p/aedict/issues/detail?id=%ISSUE%</issueLinkTemplate>
-                </configuration>
-            </plugin>
--->
             <plugin>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <configuration>
@@ -375,4 +264,3 @@ org.eclipse.jdt.core.compiler.source=1.5
         </plugins>
     </reporting>
 </project>
-
