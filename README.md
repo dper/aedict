@@ -1,12 +1,12 @@
 # aedict
 
-A clone of Aedict 2.  This is a fork of the original project on [Google Code](https://code.google.com/p/aedict/).  That source code base uses Mercurial, and here it has been converted to Git.  Aedict 2 was and is open source, although the original author dropped it in 2011 to work on the closed-source Aedict 3 (not included here).
+A clone of Aedict 2.  This is a fork of the original project on [Google Code](https://code.google.com/p/aedict/).  That source code base uses Mercurial, and here it has been converted to Git.  The original author stopped development in late 2011, but the app is functioning well years later.
 
 # Download
 
 Get an APK from the `releases` directory.  I recommend `Aedict.2.9.4.apk`.
 
-The `Aedict.2.9.4.apk` release is newer, but I don't think it has any extra features.  The author added an obnoxious pop-up request for money to the last release before switching to closed source.  I have no respect for nagware, and I recommend against using it.  The APK is there for posterity's sake.
+The `Aedict.2.9.4.apk` release is newer, but the only change is nagware.  The author added an obnoxious pop-up request for money to the 2.9.4 release, and I recommend you never use it.  The file is included here for posterity's sake.
 
 The dictionary files this program tries to get are on an old server that is still running as of 2015 but will not be replaced when the hardware finally fails.  The relevant data files can be found on another server.
 
