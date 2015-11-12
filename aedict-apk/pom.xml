@@ -26,7 +26,7 @@
 	<artifactId>aedict-apk</artifactId>
 	<packaging>android:apk</packaging>
 	<name>Aedict APK</name>
-	<description>A english-japanese dictionary which uses Jim Breen's edict data. Does not require japanese keyboard. This is the Android APK builder.</description>
+	<description>An English-Japanese dictionary which uses Jim Breen's edict data. Does not require Japanese keyboard. This is the Android APK builder.</description>
 	<properties>
 		<masa.version>1.0.2</masa.version>
 		<android.version>2.2</android.version>
