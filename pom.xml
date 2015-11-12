@@ -92,6 +92,7 @@
 	</issueManagement>
 	-->
 
+	<!--
 	<pluginRepositories>
 		<pluginRepository>
 			<id>baka.pluginRepo</id>
@@ -99,6 +100,7 @@
 			<url>http://baka.sk/maven2</url>
 		</pluginRepository>
 	</pluginRepositories>
+	-->
 	<repositories>
 		<repository>
 			<id>baka.repo</id>
