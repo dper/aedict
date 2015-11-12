@@ -71,30 +71,28 @@
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<configuration>
-				   <buildcommands>
-				   	<buildcommand>com.android.ide.eclipse.adt.ResourceManagerBuilder</buildcommand>
-				      <buildcommand>com.android.ide.eclipse.adt.PreCompilerBuilder</buildcommand>
-				      <buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
-				      <buildcommand>com.android.ide.eclipse.adt.ApkBuilder</buildcommand>
-				   </buildcommands>
-				   <additionalProjectnatures>
-				      <projectnature>com.android.ide.eclipse.adt.AndroidNature</projectnature>
-				      <projectnature>org.eclipse.jdt.core.javanature</projectnature>
-				   </additionalProjectnatures>
-				   <classpathContainers>
-				   	<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
-				   </classpathContainers>
+		 			<buildcommands>
+						<buildcommand>com.android.ide.eclipse.adt.ResourceManagerBuilder</buildcommand>
+						<buildcommand>com.android.ide.eclipse.adt.PreCompilerBuilder</buildcommand>
+						<buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
+						<buildcommand>com.android.ide.eclipse.adt.ApkBuilder</buildcommand>
+					</buildcommands>
+					<additionalProjectnatures>
+						<projectnature>com.android.ide.eclipse.adt.AndroidNature</projectnature>
+						<projectnature>org.eclipse.jdt.core.javanature</projectnature>
+					</additionalProjectnatures>
+					<classpathContainers>
+						<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+					</classpathContainers>
 				</configuration>
 			</plugin>
 			<plugin>
-				<!--<groupId>org.jvending.masa.plugins</groupId>-->
 				<groupId>com.jayway.maven.plugins.android.generation1.plugins</groupId>
 				<artifactId>maven-aapt-plugin</artifactId>
 				<version>${masa.version}</version>
 				<extensions>true</extensions>
 			</plugin>
 			<plugin>
-				<!--<groupId>org.jvending.masa.plugins</groupId>-->
 				<groupId>com.jayway.maven.plugins.android.generation1.plugins</groupId>
 				<artifactId>maven-dx-plugin</artifactId>
 				<version>${masa.version}</version>
@@ -104,25 +102,25 @@
 				</configuration>
 			</plugin>
 			<plugin>
-			   <groupId>org.jvending.masa.plugins</groupId>
-			   <artifactId>maven-toolchains-plugin</artifactId>
-			   <version>${masa.version}</version>
-			   <configuration>
-			      <toolchains>
-			         <android>
-			            <version>${android.api}</version>
-			         </android>
-			      </toolchains>
-			   </configuration>
+				<groupId>org.jvending.masa.plugins</groupId>
+				<artifactId>maven-toolchains-plugin</artifactId>
+				<version>${masa.version}</version>
+				<configuration>
+					<toolchains>
+			        		<android>
+			        			<version>${android.api}</version>
+			        		</android>
+					</toolchains>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<profiles>
 		<profile>
-	      <id>release</id>
-	      <build>
-	         <plugins>
-	            <plugin>
+			<id>release</id>
+			<build>
+				<plugins>
+					<plugin>
 						<groupId>org.jvending.masa.plugins</groupId>
 						<artifactId>maven-jarsigner-plugin</artifactId>
 						<version>${masa.version}</version>
@@ -133,9 +131,8 @@
 							<storepass>${cert.storepass}</storepass>
 						</configuration>
 					</plugin>
-	         </plugins>
-	      </build>
-	   </profile>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
 </project>
-
